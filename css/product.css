@@ -1,0 +1,84 @@
+@charset "UTF-8";
+.content {
+  width: 100%;
+}
+.content > .title {
+  width: 100%;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  padding: 0 0.2rem;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#f0f0f0));
+}
+.content > .title .title4 {
+  float: right;
+  display: block;
+  font-size: 0.28rem;
+  margin-top: 0.12rem;
+  padding: 0 0.32rem;
+  line-height: 0.56rem;
+  border: 1px solid #ccc;
+  border-radius: 0.14rem;
+  text-align: center;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ccc), to(#fff));
+}
+.content > .list {
+  width: 100%;
+}
+.content > .list li {
+  width: 100%;
+  padding: 0.2rem;
+  border-bottom: 1px solid #ccc;
+  background-color: #fff;
+}
+.content > .list li a {
+  display: block;
+}
+.content > .list li a .pic {
+  width: 2.2rem;
+}
+.content > .list li a .pic img {
+  width: 2rem;
+  height: 2rem;
+}
+.content > .list li a .right {
+  height: 100%;
+  overflow: hidden;
+}
+.content > .list li a .right .title {
+  height: 0.9rem;
+}
+.content > .list li a .right .sale {
+  height: 0.5rem;
+  line-height: 0.48rem;
+  font-size: 0.36rem;
+  color: red;
+}
+.content > .list li a .right .about {
+  height: 0.48rem;
+  line-height: 0.48rem;
+  font-size: 0.26rem;
+  color: #ccc;
+}
+.content > .page {
+  width: 100%;
+  padding-top: 0.16rem;
+  background-color: #fff;
+}
+.content > .page li {
+  width: 33.33%;
+  float: left;
+  text-align: center;
+}
+.content > .page li a {
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 0.16rem 0.4rem;
+  background-color: #eee;
+  border-bottom: 1px solid #ccc;
+  border-radius: 0.14rem;
+  box-shadow: 0 0 1px #666;
+}
+.content > .page li select {
+  font-size: 0.32rem;
+  padding: 0.16rem 0.4rem;
+}

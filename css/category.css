@@ -1,0 +1,38 @@
+@charset "UTF-8";
+.container {
+  background-color: #fff;
+}
+.content {
+  width: 100%;
+}
+.content > ul > li > .first > a {
+  width: 100%;
+  height: 0.8rem;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  display: inline-block;
+  color: #000;
+  font-size: 0.32rem;
+  font-weight: 700;
+  padding-left: 0.2rem;
+  line-height: 0.8rem;
+  border-top-left-radius: 0.08rem;
+  border-top-right-radius: 0.08rem;
+}
+.content > ul > li ul.hidde {
+  display: none;
+}
+.content > ul > li ul > li {
+  width: 33.33%;
+  float: left;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  background-color: #fff;
+}
+.content > ul > li ul > li > a {
+  text-align: center;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  width: 100%;
+  display: inline-block;
+}

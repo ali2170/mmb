@@ -1,0 +1,51 @@
+@charset "UTF-8";
+@import "color";
+.container{
+  background-color: #fff;
+}
+
+.content{
+  width: 100%;
+  >ul{
+    >li{
+      //border-radius-topleft: 25rem/50;
+      >.first{
+        >a{
+          width: 100%;
+          height: 40rem/50;
+          background-color: #eee;
+          border:1px solid #ccc;
+          display: inline-block;
+          color: #000;
+          font-size: 16rem/50;
+          font-weight:700;
+          padding-left: 10rem/50;
+          //height:40rem/50;
+          line-height:40rem/50;
+          border-top-left-radius: 4rem/50;
+          border-top-right-radius: 4rem/50;}
+      }
+
+      ul{
+        &.hidde{
+          display: none;
+        }
+         >li{
+           width: 33.33%;
+           float: left;
+           border-bottom: 1px solid #ccc;
+           border-right: 1px solid #ccc;
+           background-color: #fff;
+           >a{
+             text-align: center;
+             height: 40rem/50;
+             line-height:40rem/50;
+             width: 100%;
+             display: inline-block;
+            }
+          }
+        }
+
+    }
+  }
+}
