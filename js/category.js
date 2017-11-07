@@ -3,10 +3,11 @@
  */
 $(function () {
 
-
+    var d1 = "getcategorytitle";
+    var d2 = "getcategory";
     $.ajax({
         type:"get",
-        url:"http://192.168.1.102/api/getcategorytitle",
+        url:getUrl(d1),
         dataType:"json",
         success:function (data) {
             // console.log(data);
@@ -19,7 +20,7 @@ $(function () {
         // console.log(id);
         $.ajax({
             type:"get",
-            url:"http://192.168.1.102:9090/api/getcategory",
+            url:getUrl(d2),
             data:{
                 titleid:id
             },

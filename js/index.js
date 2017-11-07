@@ -1,12 +1,17 @@
 /**
  * Created by TT-LOVE on 2017/11/5.
  */
+
+
 $(function () {
+
+    var detail = "getindexmenu";
+    console.log(getUrl(detail));
 
     // 菜单栏
     $.ajax({
         type:"get",
-        url:"http://192.168.1.102:9090/api/getindexmenu",
+        url:getUrl(detail),
         // datatype:"jsonp",
         success:function (data) {
             // var str = data.result[0].img;
@@ -16,11 +21,11 @@ $(function () {
         }
     });
 
-
     // 折扣栏
+    var detail2 = "getmoneyctrl";
     $.ajax({
         type:"get",
-        url:"http://192.168.1.102/api/getmoneyctrl",
+        url:getUrl(detail2),
         success:function (data) {
             $(".product_info").html(template("tpl2",data));
             // console.log(data.result);
