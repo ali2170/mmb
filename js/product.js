@@ -2,6 +2,8 @@
  * Created by TT-LOVE on 2017/11/6.
  */
 $(function () {
+    var d1 = "getcategorybyid";
+    var d2 = "getproductlist";
     var search =location.search;
     search=search.split("?")[1];
     var arr = search.split("&");
@@ -24,7 +26,7 @@ $(function () {
     // 渲染主题
     $.ajax({
         type:'get',
-        url:'http://192.168.1.102:9090/api/getcategorybyid',
+        url:getUrl(d1),
         data:{
             categoryid:categoryid
         },
@@ -39,7 +41,7 @@ $(function () {
     function render(pageid) {
         $.ajax({
             type:"get",
-            url:"http://192.168.1.102:9090/api/getproductlist",
+            url:getUrl(d2),
             data:{
                 categoryid:categoryid,
                 pageid:pageid
