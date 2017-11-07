@@ -3,6 +3,7 @@
   width: 100%;
 }
 .content > .title {
+  font-size: 0.28rem;
   width: 100%;
   height: 0.8rem;
   line-height: 0.8rem;
@@ -25,6 +26,7 @@
   width: 100%;
 }
 .content > .list li {
+  font-size: 0.28rem;
   width: 100%;
   padding: 0.2rem;
   border-bottom: 1px solid #ccc;

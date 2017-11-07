@@ -29,6 +29,38 @@
         <div class="title">
             <!--挖个坑-->
         </div>
+        <div class="product_info">
+            <!--挖个坑-->
+        </div>
+        <div class="bijia_detail">
+                <ul class="clearfix">
+                    <li><a href="#">比价购买</a></li>
+                    <li><a href="#">产品参数</a></li>
+                    <li><a href="#">评价(2323)</a></li>
+                </ul>
+            </div>
+        <div class="bj_shop clearfix">
+            <div class="left fl">
+                <a href="#"><img src="images/jd.png" alt=""> 京东商城</a>
+            </div>
+            <div class="right fr">
+                <span>&yen;1999.00</span>
+                <input type="button" value="去购买">
+            </div>
+        </div>
+        <div class="note">
+            * 实际价格以各网站列出的实时售价为准，我们提供的价格可能有数小时至数日的延迟。
+        </div>
+        <div class="talk_title">
+            网友评价
+        </div>
+        <div class="talk_content">
+            <!--挖个坑-->
+        </div>
+        <div class="more">
+            <input type="button" value="查看更多评价">
+        </div>
+
 
 
 
@@ -54,19 +86,44 @@
         </div>
     </div>
 </div>
-<!--<script type="text/html" id="tpl">
+<script type="text/html" id="tpl">
     {{each result v i}}
     <a class="title1" href="index.html">首页 &gt;</a>
     <a class="title2" href="category.html">全部分类 &gt;</a>
-    <a class="title3" href="#">{{v.category}} &gt;</a>
+    <a class="title3" href="#">{{newName}} &gt;</a>
     <a class="title4" href="#">筛选</a>
     {{/each}}
 
-</script>-->
-
+</script>
+<script type="text/html" id="tpl2">
+    {{each result v i}}
+    <div class="title"><p>{{v.productName}}</p></div>
+    <div class="pic">{{@v.productImg}}</div>
+    <div class="collect">
+        <a href="#">
+            <img src="images/ic_kb.png" alt="">
+        </a>
+    </div>
+    {{/each}}
+</script>
+<script type="text/html" id="tpl3">
+    {{each result v i}}
+    <ul>
+        <li>
+            <div class="title clearfix">
+                <span class="autor fl">{{v.comName}}</span>
+                <span class="time fr">{{v.comTime}}</span>
+            </div>
+            <div class="from clearfix"><span class="fr">{{v.comFrom}}</span></div>
+            <div class="info"><p>{{v.comContent}}</p></div>
+        </li>
+    </ul>
+    {{/each}}
+</script>
 
 <script src="lib/jquery/jquery.min.js"></script>
 <script src="lib/artTemplate/template-web.js"></script>
+<script src="js/common.js"></script>
 <script src="js/bijia.js"></script>
 </body>
 </html>
