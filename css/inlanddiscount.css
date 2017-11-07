@@ -1,0 +1,65 @@
+@charset "UTF-8";
+.container {
+  background-color: #fff;
+}
+.footer > .footer_top {
+  margin-top: 0.8rem;
+}
+.content {
+  background-color: #fff;
+  width: 100%;
+}
+.content .product {
+  width: 100%;
+  background-color: #fff;
+}
+.content .product ul li {
+  width: 100%;
+  padding: 0.28rem 0.16rem;
+}
+.content .product ul li a {
+  display: block;
+}
+.content .product ul li a .left {
+  width: 2.2rem;
+  height: 2rem;
+}
+.content .product ul li a .left img {
+  width: 2rem;
+  height: 2rem;
+}
+.content .product ul li a .right {
+  overflow: hidden;
+}
+.content .product ul li a .right .top {
+  height: 1rem;
+  margin: 0;
+}
+.content .product ul li a .right .bottom {
+  margin-top: 0.16rem;
+  font-size: 0.26rem;
+  color: #ccc;
+}
+.content > .page {
+  width: 100%;
+  padding-top: 0.16rem;
+  background-color: #fff;
+}
+.content > .page li {
+  width: 33.33%;
+  float: left;
+  text-align: center;
+}
+.content > .page li a {
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 0.16rem 0.4rem;
+  background-color: #eee;
+  border-bottom: 1px solid #ccc;
+  border-radius: 0.14rem;
+  box-shadow: 0 0 1px #666;
+}
+.content > .page li select {
+  font-size: 0.32rem;
+  padding: 0.16rem 0.4rem;
+}

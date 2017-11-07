@@ -1,0 +1,37 @@
+@charset "UTF-8";
+.content {
+  width: 100%;
+  color: #fff;
+}
+.content .product {
+  width: 100%;
+  background-color: #fff;
+}
+.content .product ul li {
+  width: 100%;
+  padding: 0.28rem 0.16rem;
+  border-bottom: 1px solid #ccc;
+}
+.content .product ul li a {
+  display: block;
+}
+.content .product ul li a .left {
+  width: 2.2rem;
+  height: 2rem;
+}
+.content .product ul li a .left img {
+  width: 2rem;
+  height: 2rem;
+}
+.content .product ul li a .right {
+  overflow: hidden;
+}
+.content .product ul li a .right .top {
+  height: 1rem;
+  margin: 0;
+}
+.content .product ul li a .right .bottom {
+  margin-top: 0.16rem;
+  font-size: 0.26rem;
+  color: #ccc;
+}
