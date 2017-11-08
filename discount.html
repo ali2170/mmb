@@ -7,7 +7,7 @@
     <title>国内折扣</title>
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="lib/fa/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/inlanddiscount.css">
+    <link rel="stylesheet" href="css/discount.css">
 </head>
 <body>
 <div class="container">
@@ -26,12 +26,19 @@
 
 
     <!--内容区域-->
-    <div class="content">
-        <ul class="sd clearfix">
-            <!--挖个坑-->
-        </ul>
-
+    <div class="center">
+        <!--挖个坑-->
     </div>
+
+
+
+
+
+
+
+
+
+
 
 
     <!--底部区域-->
@@ -53,25 +60,53 @@
     </div>
 </div>
 <script type="text/html" id="tpl">
-    {{each result v i}}
-    <li>
-        <a href="discount.html?productid={{v.productId}}">
-            {{@v.productImg}}
-            <div class="title"><h3>{{v.productName}}</h3></div>
-            <div class="subtit">{{v.productPrice}}</div>
-            <div class="info">
-                <div class="mall">{{v.productFrom}}| {{v.productTime}}</div></div>
-        </a>
-    </li>
-    {{/each}}
-</script>
 
+    {{each result v i}}
+    <div class="content clearfix">
+        <h3>{{v.productName}}</h3>
+        <div class="info">
+            <span class="mall">{{v.productForm}}</span>
+            <span>{{v.productTime}}</span>
+            <span>{{v.productTips}}</span>
+        </div>
+        <div class="pic_sm fr">
+            <img src="http://cacheimg.manmanbuy.com/r_img/cacheimg.aspx?width=600&imgurl=j_sources/img/2016/10/24/190_190_0_36618798b6e1a98d9f4ae8f7a195f41b.jpg"
+                 alt="">
+        </div>
+        <div class="article">
+            <p>{{v.productInfo}}</p>
+            <p>{{v.productInfo1}}</p>
+            {{@v.productImg}}
+        </div>
+        <div class="address">
+
+            <!--<div class="info">-->
+                <!--{{@v.productCity}}-->
+            <!--</div>-->
+
+
+        </div>
+
+        <div class="tobuy">
+            <a href="#">前往购买</a>
+        </div>
+
+        <div class="code_pic">
+            <img src="images/mmbweixin2.png" alt="">
+        </div>
+    </div>
+    {{@v.productComment}}
+
+    {{/each}}
+
+
+</script>
 
 
 
 <script src="lib/jquery/jquery.min.js"></script>
 <script src="lib/artTemplate/template-web.js"></script>
 <script src="js/common.js"></script>
-<script src="js/inlanddiscount.js"></script>
+<script src="js/discount.js"></script>
 </body>
 </html>
