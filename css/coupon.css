@@ -1,0 +1,35 @@
+@charset "UTF-8";
+.html.body {
+  background-color: #fff;
+}
+.container {
+  background-color: #fff;
+}
+.container .header {
+  background-color: red;
+}
+.content {
+  width: 100%;
+  background-color: #fff;
+}
+.content > ul {
+  padding: 0.2rem 0;
+  width: 100%;
+}
+.content > ul > li {
+  float: left;
+  margin-left: 0.1rem;
+  margin-top: 0.1rem;
+  padding-top: 0.1rem;
+  text-align: center;
+  font-size: 0.24rem;
+  border: 1px solid #ccc;
+  width: 15%;
+}
+.content > ul > li > a {
+  color: #000;
+}
+.content > ul > li > a img {
+  height: 1rem;
+  max-width: 1rem;
+}

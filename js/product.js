@@ -19,6 +19,7 @@ $(function () {
     }
     // console.log(obj);
     var category = obj.category;
+    console.log(category);
     // console.log(category);
     var categoryid =obj.categoryId;
     var pageid = obj.pageid;
@@ -49,14 +50,19 @@ $(function () {
             dataType:"json",
             success:function (data) {
                 console.log(data);
+                data.category=decodeURI(category);
+                // data.categoryid=categoryid;
+                // data.pageid=pageid;
+                console.log(data.category+"哈哈");
                 $('.list ul').html(template("tpl2",data));
                 totalPage = Math.ceil(data.totalCount/data.pagesize);
-                data.totalPage =totalPage;
-                data.pageid=pageid;
-                console.log(data);
-                $('#select').html(template("tpl3",data));
+                console.log('哈哈');
                 // console.log(totalPage);,data
                 console.log('哈哈');
+                data.totalPage =totalPage;
+                // data.pageid=pageid;
+                console.log(data);
+                $('#select').html(template("tpl3",data));
                 $('#select').val(pageid);
 
             }

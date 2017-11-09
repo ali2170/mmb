@@ -3,10 +3,71 @@
 @import "color";
 
 .container{
-  background-color: #fff;
-.header{
+  background-color: #eee;
+  .header{
   background-color: #f4483e;
   height:50rem/50;
   line-height:44rem/50;
-}
+  }
+  .content{
+    width:100%;
+    background-color: #fff;
+    .nav_all{
+      //box-sizing: border-box;
+      width:100%;
+      border-bottom: 5rem/50 solid #eee;
+      height: 40rem/50;
+      position: relative;
+      //background-color: #ccc;
+      //width:100rem/50;
+      //border-bottom:2rem/50 solid #ccc;
+      .nav{
+        //padding:  0 15rem/50;
+        //line-height:38rem/50;
+        //width: 900rem/50;
+        height: 40rem/50;
+        overflow: hidden;
+        //ul{
+        //  //height:40rem/50;
+        //}
+        li{
+          margin:0 12rem/50;
+          float: left;
+          text-align: left;
+          //height: 36rem/50;
+          //box-sizing:border-box;
+          //margin:0 12rem/50;
+          line-height:36rem/50;
+          &.active{
+            //color: red;
+            //border-bottom:red;
+            border-bottom:2rem/50 solid red;
+            >a{
+              //height:36rem/50;
+              color: red;
+              //padding: 6rem/50 0 6rem/50;
+            //display: block;
+            }
+          }
+        }
+      }
+
+      .search{
+        width: 38rem/50;
+        height: 38rem/50;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top:0;
+        right:0;
+        //background-color: #cccccc;
+        background: #fbfbfb url("../images/icon_bar.png") -50px -50px no-repeat;
+        background-size: 22rem/50 auto;
+        background-position: center center;
+      }
+      }
+    .product{
+
+    }
+  }
 }

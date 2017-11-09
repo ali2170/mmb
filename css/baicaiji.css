@@ -55,10 +55,48 @@
   }
 }
 .container {
-  background-color: #fff;
+  background-color: #eee;
 }
 .container .header {
   background-color: #f4483e;
   height: 1rem;
   line-height: 0.88rem;
+}
+.container .content {
+  width: 100%;
+  background-color: #fff;
+}
+.container .content .nav_all {
+  width: 100%;
+  border-bottom: 0.1rem solid #eee;
+  height: 0.8rem;
+  position: relative;
+}
+.container .content .nav_all .nav {
+  height: 0.8rem;
+  overflow: hidden;
+}
+.container .content .nav_all .nav li {
+  margin: 0 0.24rem;
+  float: left;
+  text-align: left;
+  line-height: 0.72rem;
+}
+.container .content .nav_all .nav li.active {
+  border-bottom: 0.04rem solid red;
+}
+.container .content .nav_all .nav li.active > a {
+  color: red;
+}
+.container .content .nav_all .search {
+  width: 0.76rem;
+  height: 0.76rem;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #fbfbfb url("../images/icon_bar.png") -50px -50px no-repeat;
+  background-size: 0.44rem auto;
+  background-position: center center;
 }

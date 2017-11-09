@@ -1,0 +1,75 @@
+@charset "UTF-8";
+.bd {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+.bd.now {
+  display: block;
+}
+.container {
+  background-color: #fff;
+}
+.container > .header {
+  background-color: #f4483e;
+}
+.container > .content {
+  width: 100%;
+}
+.container > .content > .title {
+  width: 100%;
+  text-align: center;
+  font-size: 0.24rem;
+  color: #999;
+  margin: 0.16rem 0;
+}
+.container > .content .product {
+  width: 100%;
+}
+.container > .content .product li {
+  height: 2.4rem;
+}
+.container > .content .product li a {
+  display: inline-block;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  padding: 0.2rem;
+}
+.container > .content .product li a .pic {
+  float: left;
+  width: 2rem;
+  height: 1.6rem;
+}
+.container > .content .product li a .pic img {
+  width: 100%;
+  height: 100%;
+}
+.container > .content .product li a .info {
+  line-height: 0.48rem;
+  padding-right: 0.6rem;
+  overflow: hidden;
+  padding-left: 0.2rem;
+}
+.container > .content .product li a .info .title h3 {
+  margin: 0;
+  padding: 0;
+  word-break: break-all;
+  text-align: justify;
+  font-size: 0.28rem;
+  font-weight: normal;
+  color: #333333;
+  line-height: 0.4rem;
+}
+.container > .content .product li a .info h2 {
+  font-size: 0.28rem;
+}
+.container > .content .product li a .info .time {
+  color: #ff841d;
+  font-size: 0.24rem;
+  margin-top: 0.2rem;
+}

@@ -95,8 +95,9 @@
 
 <script type="text/html" id="tpl2">
     {{each result v i}}
+    <!--{{category}}-->
     <li class="clearfix">
-        <a href="bijia.html?productid={{v.productId}}&brandName={{v.brandName}}">
+        <a href="bijia.html?productid={{v.productId}}&brandName={{v.brandName}}&category={{category}}">
             <div class="pic fl">{{@v.productImg}}</div>
             <div class="right ">
                 <p class="title">{{v.productName}}</p>
